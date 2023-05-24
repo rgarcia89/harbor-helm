@@ -1,4 +1,4 @@
-{{- if (gt (int .Values.nginx.replicas) 1) }}
+{{- if and .Values.nginx.podDisruptionBudget (gt (int .Values.nginx.replicas) 1) }}
 apiVersion: policy/v1
 kind: PodDisruptionBudget
 metadata:

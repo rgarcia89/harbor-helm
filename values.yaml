@@ -415,6 +415,7 @@ nginx:
   nodeSelector: {}
   tolerations: []
   affinity: {}
+  podDisruptionBudget: false
   ## Additional deployment annotations
   podAnnotations: {}
   ## Additional deployment labels
@@ -440,6 +441,7 @@ portal:
   nodeSelector: {}
   tolerations: []
   affinity: {}
+  podDisruptionBudget: false
   ## Additional deployment annotations
   podAnnotations: {}
   ## Additional deployment labels
@@ -469,6 +471,7 @@ core:
   nodeSelector: {}
   tolerations: []
   affinity: {}
+  podDisruptionBudget: false
   ## Additional deployment annotations
   podAnnotations: {}
   ## Additional deployment labels
@@ -538,6 +541,7 @@ jobservice:
   nodeSelector: {}
   tolerations: []
   affinity: {}
+  podDisruptionBudget: false
   ## Additional deployment annotations
   podAnnotations: {}
   ## Additional deployment labels
@@ -578,6 +582,7 @@ registry:
   nodeSelector: {}
   tolerations: []
   affinity: {}
+  podDisruptionBudget: false
   ## Additional deployment annotations
   podAnnotations: {}
   ## Additional deployment labels
@@ -688,6 +693,7 @@ trivy:
   nodeSelector: {}
   tolerations: []
   affinity: {}
+  podDisruptionBudget: false
   ## Additional deployment annotations
   podAnnotations: {}
   ## Additional deployment labels

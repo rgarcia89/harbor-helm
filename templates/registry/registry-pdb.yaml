@@ -1,4 +1,4 @@
-{{- if (gt (int .Values.registry.replicas) 1) }}
+{{- if and .Values.registry.podDisruptionBudget (gt (int .Values.registry.replicas) 1) }}
 apiVersion: policy/v1
 kind: PodDisruptionBudget
 metadata:
